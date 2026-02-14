@@ -1,34 +1,77 @@
-Medical Insurance Charges Prediction (Linear Regression)
-Overview
+# Health Insurance Price Prediction Using Linear Regression
 
-This project applies machine learning (Linear Regression) to predict medical insurance charges using the MCLR Health Insurance dataset. The goal is to understand how customer attributes such as age, BMI, smoking status, and region influence medical costs and to build a model that can estimate charges based on these features.
-Dataset
+[![Python](https://img.shields.io/badge/python-3.x-blue?logo=python)](https://www.python.org/)
+[![ML](https://img.shields.io/badge/model-Linear%20Regression-green)]()
+[![Status](https://img.shields.io/badge/status-complete-success)]()
 
-The dataset includes:
+This project builds a **machine learning model using Linear Regression** to predict **health insurance prices** based on individual attributes. The focus of the project is on **data analysis, preprocessing, and model interpretation** rather than complex modeling.
 
-Age
+---
 
-Sex
+## Project Overview
 
-BMI
+Health insurance costs depend on several factors such as age, BMI, smoking habits, and region.  
+This project uses **Linear Regression** to model the relationship between these features and insurance charges.
 
-Number of children
-Project Workflow
+The workflow emphasizes:
+- Exploratory Data Analysis (EDA)
+- Proper data preprocessing
+- Model training and evaluation
 
-1.Data Exploration – Inspected dataset structure, data types, and quality
+---
 
-2.Exploratory Data Analysis (EDA) – Visualized data distributions and analyzed correlations between features and medical charges
+## Dataset Description
 
-3.Data Preprocessing – Encoded categorical variables and split data into training and testing sets
+The dataset contains the following features:
+- `age` – Age of the individual
+- `sex` – Gender
+- `bmi` – Body Mass Index
+- `children` – Number of dependents
+- `smoker` – Smoking status
+- `region` – Residential region
+- `charges` – Health insurance cost (target variable)
 
-4.Model Building – Trained a Linear Regression model to predict medical charges
+---
 
-5.Model Evaluation – Assessed model performance and interpreted feature impact
+## Workflow
 
-Tools Used
+### 1. Exploratory Data Analysis (EDA)
+- Analyzed feature distributions and relationships
+- Visualized correlations between variables
+- Identified outliers and trends affecting insurance charges
 
-Python, pandas, NumPy, matplotlib, seaborn, scikit-learn, Jupyter Notebook
+### 2. Data Preprocessing
+- **Imputation:** Handled missing values
+- **Encoding:** Converted categorical variables into numerical form
+- **Scaling:** Scaled numerical features to improve model performance
 
-Outcome
+### 3. Model Building
+- Implemented a **Linear Regression** model
+- Split the dataset into training and testing sets
+- Trained the model on processed data
 
-The project demonstrates an end-to-end machine learning workflow, from data analysis and visualization to model training and evaluation, with a strong focus on understanding feature relationships and model behavior.
+### 4. Model Evaluation
+- Evaluated performance using:
+  - R² score
+  - Mean Absolute Error (MAE)
+  - Mean Squared Error (MSE)
+- Interpreted coefficients to understand feature impact
+
+---
+
+## Tools & Libraries
+
+- Python 3.x
+- pandas, numpy — data manipulation
+- matplotlib, seaborn — data visualization
+- scikit-learn — preprocessing, Linear Regression, evaluation metrics
+
+---
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+
+
